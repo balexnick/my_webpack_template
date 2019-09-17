@@ -1,0 +1,17 @@
+.webpack-logo {
+  animation: webpack-logo-spin infinite 30s linear;
+}
+
+.webpack-logo {
+  height: 500px;
+}
+
+@keyframes webpack-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

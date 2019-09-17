@@ -9,8 +9,12 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title #{title}
   body
-    .container
-      include ../modules/header
-      section
-        block content
-      include ../modules/footer
+    if title === 'Webpack page'
+      .webpack-color
+        +mainTemplate()
+    else if title === 'Pug page'
+      .pug-color
+        +mainTemplate()
+    else if title === 'Sass page'
+      .sass-color
+        +mainTemplate()

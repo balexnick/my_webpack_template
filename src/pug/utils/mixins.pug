@@ -1,2 +1,12 @@
-mixin list(name)
-  li.ere= name
+mixin mainTemplate()
+  .container
+    include ../modules/header
+    .welcome-page
+      block content
+      
+mixin logoTitle(logo, logoImg, logoClass, title)
+  img(class=logoClass src=logoImg, alt=logo)
+  h1.logo-title=title
+
+mixin webpackConfig(text)
+  li=text

@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Pug page'
+
+
+block content 
+  +logoTitle("pug","./img/pug-logo.png","pug-logo","Welcome to Pug")
+  p.logo-text To get started, edit ./src/pug/../.. and save to reload. 
+  p.logo-text In the ./src/pug/pages folder Webpack counts the number of files and compiles it into .html 
+    

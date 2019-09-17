@@ -68,11 +68,44 @@ section,
   }
 }
 
-.success {
-  background: $danger-color
+/////////////////////STYLES FOR TEMPLATE///////////////////////
+.webpack-color {
+  height: 100vh;
+  background-image: linear-gradient(to left bottom, #005e90, #005a99, #0055a1, #004ea8, #0446ac);
+}
+
+.pug-color {
+  height: 100vh;
+  background-image: linear-gradient(to left bottom, #646946, #6d6d45, #767144, #807543, #8b7843);
+}
+
+.sass-color {
+  height: 100vh;
+  background-image: radial-gradient(circle, #570038, #680341, #79074a, #8b0d53, #9d135b);
+}
+
+.welcome-page {
+  text-align: center;
+  padding: 30px 0;
+  color: #e5e5e5;
+
+}
+
+.logo-title,
+.logo-text {
+  padding: 10px;
+}
+
+.logo-title {
+  font-size: 55px;
+}
+
+.logo-text {
+  font-size: 20px
 }
 
 // Modules
-// @import "modules/my-module.scss";
-// @import "modules/header.scss";
-// @import "modules/sect.scss";
+@import "modules/header.scss";
+@import "modules/webpack-page.scss";
+@import "modules/pug-page.scss";
+@import "modules/sass-page.scss";

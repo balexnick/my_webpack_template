@@ -1,15 +1,14 @@
 extends ../layout/main
 
 block variables
-  - var title = 'TEST'
+  - var title = 'Webpack page'
 
 
 block content 
+  +logoTitle("Webpack","./img/webpack-logo.png","webpack-logo","Welcome to Webpack")
+  p.logo-text You can examine the configuration files in the root of the template:
   ul
-    +list("name")
-    +list("sdfs")
-    +list("nasdfsdfme")
-    +list("dfsfsdfdsf")
-    +list("nasdfsfsdfsme")
-    +list("namfsdfsfsdfe")
-  img(src="./img/photo.png", alt="")  
+    +webpackConfig("webpack.base.config.js")
+    +webpackConfig("webpack.build.conf.js")
+    +webpackConfig("webpack.dev.conf.js")
+  
